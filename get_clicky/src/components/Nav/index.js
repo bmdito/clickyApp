@@ -8,7 +8,11 @@ class Nav extends Component {
         return (
             <>
                 <nav className="navStyle">
-                    <h1>Let's Get Clicky!</h1>
+                    <ul>
+                        <li>Get Clicky!</li>
+                        <li>The GAME</li>
+                        <li>Score!</li>
+                    </ul>
                 </nav>
             </>
         )
