@@ -21,9 +21,10 @@ class App extends Component {
         <>
           <Nav />
           <Wrapper>
-            <h1>This is a header!</h1>
+            
             {this.state.characters.map(character => 
                   <CharTile
+                      key={character.id}
                       image={character.image}
                   />
               )}

@@ -7,7 +7,7 @@ class CharTile extends Component{
         
         return(
             <>
-                <div className="Card">
+                <div className="card">
                     <div className="img-container">
                         <img alt={this.props.id} src={this.props.image}/>
                     </div>
