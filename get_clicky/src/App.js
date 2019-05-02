@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from "./components/Nav";
 import logo from './logo.svg';
 import './App.css';
 
@@ -6,7 +7,8 @@ function App() {
   return (
     
       <>
-        <h1>This is the Heading!</h1>
+        <Nav />
+        <h1>This is a header!</h1>
       </>
 
   );
