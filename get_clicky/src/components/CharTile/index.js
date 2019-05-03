@@ -1,20 +1,19 @@
-import React, {Component} from "react";
+import React from "react";
 import "./style.css";
 
-class CharTile extends Component{
+function CharTile (props){
     
-    render() {
-        
+            
         return(
             <>
-                <div className="card">
+                <div className="card" onClick={() => {props.clickedHero(props.id);props.matchCheck(props.id)}}>
                     <div className="img-container">
-                        <img alt={this.props.id} src={this.props.image}/>
+                        <img alt={props.id} src={props.image}/>
                     </div>
                 </div>
             </>
         )
-    }
+    
 }
 
 export default CharTile;

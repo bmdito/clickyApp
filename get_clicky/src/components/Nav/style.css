@@ -2,5 +2,6 @@
 .navStyle {
     background-color:lightBlue;
     color:orange;
-    height:100px
+    height:100px;
+    justify-content: center;
 }

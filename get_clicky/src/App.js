@@ -10,8 +10,26 @@ import CharTile from './components/CharTile/index.js';
 class App extends Component {
 
   state = {
-    characters
+    characters,
+    notClicked: characters
   };
+
+  clickedHero = id => {
+    
+    const notClicked = this.state.notClicked.filter(character => character.id !== id);
+
+      this.setState({
+        notClicked
+      });
+            
+      console.log(this.state.notClicked);
+      
+  }
+
+  matchCheck = id => {
+    console.log("Check engaged");
+  }
+  
 
   render(){
 
@@ -26,7 +44,10 @@ class App extends Component {
             {this.state.characters.map(character => 
                   <CharTile
                       key={character.id}
+                      id={character.id}
                       image={character.image}
+                      clickedHero = {this.clickedHero}
+                      matchCheck = {this.matchCheck}
                   />
               )}
           </Wrapper>
