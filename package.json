@@ -2,6 +2,7 @@
   "name": "get_clicky",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://bmdito.github.io/get_Clicky/.",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

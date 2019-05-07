@@ -6,7 +6,7 @@ function CharTile (props){
             
         return(
             <>
-                <div className="card" onClick={() => {props.clickedHero(props.id);props.matchCheck(props.id)}}>
+                <div className="card" onClick={() => props.clickedHero(props.id)}>
                     <div className="img-container">
                         <img alt={props.id} src={props.image}/>
                     </div>
